@@ -34,5 +34,19 @@ Course held at UGR ETSIIT, academic year 2015/16.
 - Connolly T, C. Begg. - Sistemas de Bases de Datos (4 Ed) - Addison-Wesley, 2005. ISBN 8478290753
 
 #####Evaluation
-(./images/FBD Eval.png)
+(/images/FBD Eval.png)
 
+#####Tools and Software
+We'll use "Oracle Database XE" to manage relational (and not) DBs. It can be downloaded [here](http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html) and must be installed as Administrator (Windows) or as superuser (Linux).<p>
+The following procedure is for Linux:
+- Once installed (in Linux: _rpm -i \<packet\>_), run as sudo:
+	/etc/init.d/oracle-xe configure
+- we'll use _port 8080_ for _HTTP access to DB_ and _port 1521_ for the _database listener_, you will be asked for a password for two main users: _sys_ and _system_
+- once done, we can access the web interface at [this link](http://127.0.0.1:8080/apex) and login with one of the two users mentioned above and the password precedently inserted
+- create a new user and grant rights to it via this command lines:
+	CREATE USER username
+	IDENTIFIED BY password
+	DEFAULT TABLESPACE users
+	TEMPORARY TABLESPACE temp
+	ACCOUNT UNLOCK;
+	GRANT CONNECT, RESOURCE TO username
