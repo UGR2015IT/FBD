@@ -47,10 +47,6 @@ The following procedure is for Linux:
 - once done, we can access the web interface at [this link](http://127.0.0.1:8080/apex) and login with one of the two users mentioned above and the password precedently inserted
 - create a new user and grant rights to it via this command lines in _SQL Commands_:
 ```
-CREATE USER username
-IDENTIFIED BY password
-DEFAULT TABLESPACE users
-TEMPORARY TABLESPACE temp
-ACCOUNT UNLOCK;
+CREATE USER username IDENTIFIED BY password DEFAULT TABLESPACE users TEMPORARY TABLESPACE temp ACCOUNT UNLOCK;
 GRANT CONNECT, RESOURCE TO username
 ```
