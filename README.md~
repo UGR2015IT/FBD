@@ -34,7 +34,7 @@ Course held at UGR ETSIIT, academic year 2015/16.
 - Connolly T, C. Begg. - Sistemas de Bases de Datos (4 Ed) - Addison-Wesley, 2005. ISBN 8478290753
 
 #####Evaluation
-(/images/FBD eval.png)
+(/images/FBD Eval.png)
 
 #####Tools and Software
 We'll use "Oracle Database XE" to manage relational (and not) DBs. It can be downloaded [here](http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html) and must be installed as Administrator (Windows) or as superuser (Linux).<p>
