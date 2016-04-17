@@ -1,0 +1,8 @@
+*.~
+*.db
+*.temp
+*.db
+/Gabriel
+/Gabriel/*
+/Loseto
+/Loseto/*
