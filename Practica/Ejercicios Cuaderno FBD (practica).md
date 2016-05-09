@@ -90,9 +90,9 @@ Una vez borrada la tabla _prueba1_, se puede ejecutar una query _SELECT_ para ve
     UPDATE plantilla SET NOMBRE = 'Luis' WHERE DNI = '12345678';
 ```
 
-![ej2.9](.images/ej2_9.png)
+![ej2.9](./images/ej2_9.png)
 
-### Ejercicio 2.10
+### Ejercicio
 
 No se pueden borrar todas las tuplas de la tabla _plantilla_. Esto porque hay conflicto de dependencia entre la tabla _plantilla_ y la tabla _serjefe_ porque la segunda tiene claves externas de la prima.
 
@@ -100,7 +100,7 @@ No se pueden borrar todas las tuplas de la tabla _plantilla_. Esto porque hay co
 
 Sin embrargo, si se pueden borrar todas las tuplas de la tabla _serjefe_ porque no hay conflicto de dependencia.
 
-![ej2_10_1](.images/ej2_10_1.png)
+![ej2_10_1](./images/ej2_10_1.png)
 
 ### Ejercicio 2.11
 
@@ -118,7 +118,7 @@ Se puede razonar que:
 - la segunda falta de una clave externa, es decir intenta insertar clave externa de valor nulo y por esto no se puede insertar
 - la tercera tiene un formato no valido para la fecha, y por esto no se puede insertar
 
-![ej2_11](.images/ej2_11.png)
+![ej2_11](./images/ej2_11.png)
 
 ### Ejercicio 2.12
 
@@ -126,11 +126,11 @@ Se puede razonar que:
 UPDATE ventas SET fecha = TO_DATE(2005,'YYYY') WHERE codpro='S5';
 ```
 
-![ej2_12](.images/ej2_12.png)
+![ej2_12](./images/ej2_12.png)
 
 ### Ejercicio 2.13
 
-![ej2_13](.images/ej2_13.png)
+![ej2_13](./images/ej2_13.png)
 
 ### Ejercicios Adicionales
 
@@ -247,7 +247,7 @@ El fichero SQL de esta insercion se llama [addicional2.sql](./SQL files/addicion
 
 La consulta ``` SELECT ciudad FROM proyecto; ``` no es igual a la proyeccion con el pi de la AR. Para obtener este resultado, hay que usar la palabra clave DISTINCT de esta forma: ``` SELECT DISTINCT ciudad FROM proyecto; ``` .
 
-![ej3_1](.images/ej3_1.png)
+![ej3_1](./images/ej3_1.png)
 
 ## Ejercicio 3.2
 
@@ -257,7 +257,7 @@ La consulta ``` SELECT ciudad FROM proyecto; ``` no es igual a la proyeccion con
 
 ## Ejercicio 3.4
 
-```SELECT * from ventas WHERE cantidad>=200 AND cantidad<=300;```
+```SELECT * from ventas WHERE cantidad>=200 AND cantidad<=300; ```
 
 ## Ejercicio 3.5
 
@@ -267,4 +267,6 @@ La consulta ``` SELECT ciudad FROM proyecto; ``` no es igual a la proyeccion con
 
 La consulta no devuelve ninguna tablas porque 'ventas' es en minusculas!
 
-![ej3_1](.images/ej3_6.png)
+![ej3_1](./images/ej3_6.png)
+
+## Ejercicio 3.7
