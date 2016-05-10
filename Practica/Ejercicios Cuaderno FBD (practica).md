@@ -177,11 +177,12 @@ CREATE TABLE Encuentros(
 );
 
 CREATE TABLE Faltas(
-  codJ REFERENCES Jugadores(codJ),
-  eq1 REFERENCES Encuentros(eq1),
-  eq2 REFERENCES Encuentros(eq2),
-  num int DEFAULT '0' CHECK(num>=0 AND num<=5)
-  PRIMARY KEY(codJ,eq1,eq2)
+  cJ REFERENCES Jugadores(codJ),
+  equ1 REFERENCES Encuentros(eq1),
+  equ2 REFERENCES Encuentros(eq2),
+  numero int DEFAULT '0',
+  PRIMARY KEY (cJ, equ1, equ2),
+  CHECK(numero>=0 AND numero<=5)
 );
 ```
 
