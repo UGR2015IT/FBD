@@ -90,4 +90,44 @@ Le se puede añadir una selección con el operador WHERE como si fuera una cualq
 
 ![natjoin](./images/natjoin.PNG)
 
+#### Ordenacion de resultados = ORDER BY
+
+![orderby](./images/orderby.PNG)
+
+#### Subconsultas en SQL
+
+![subcons](./images/subcons.PNG)
+
+##### Operador de pertenencia IN
+
+![subcons_IN](./images/subcons_IN.PNG)
+
+##### Operador de existencia EXISTS
+
+![subcons_exists](./images/subcons_exists.PNG)
+
+##### Otros operadores: comparadores de conjuntos
+
+![subcons_otros](./images/subcons_otros.PNG)
+
+#### Division AR
+
+![divARgen](./images/divARgen.PNG)
+
+A partir de esta formula, tenemos tres posibles aproximaciones:
+
+1) definicion en AR
+![defdiv](./images/defdiv.PNG)
+![defdivSQL](./images/defdivSQL.PNG)
+2) basada en CR
+![divCR](./images/divCR.PNG)
+![divCRSQL](./images/divCRSQL.PNG)
+3) mixta con NOT EXISTS
+![divNOTEXISTS](./images/divNOTEXISTS.PNG)
+
+#### Funciones de agregación [ SUM(), MIN(), MAX(), AVG(), COUNT(), STDDEV() ]
+
+En las consultas de tipo SELECT se pueden usar funciones de agregacion para sacar un valor particular de una tabla o de una subconsulta:
+        SELECT MAX(cantidad) FROM ventas;
+        
 #### 
